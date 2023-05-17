@@ -23,23 +23,22 @@
 .apresentacao {
     display:flex;
     margin: 2%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-
+    border: 1px solid red;
 }
 
 .cabecalho {
     margin: 0 4%;
     display: flex;
     align-items: center;
-    border: 1px solid red;
     
 }
 .cabecalho img {
     margin-right: 2%;
 }
 
-.container-menu {
+.container-menu-esquerdo {
     margin: 0% 2%;
     /* border: 1px solid red; */
 }
@@ -54,7 +53,9 @@
     font-family: var(--fonte-primaria);
     font-weight: 200;
     font-size: 12px;
-    margin: 0px 0px 15px 0px;
+    margin: 0 0 15% 0;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.3rem;
 }
 
 .menu-esquerdo-abas{
@@ -76,7 +77,7 @@
 
 .barra-pesquisa{
     display: flex;
-    width: 700px;
+    width: 752px;
     background: var(--cor-primaria);
     border-radius: 10px;
     padding: 10px 20px;
@@ -122,7 +123,7 @@
     align-items: center;
     justify-content: right;
     gap: 10px;
-    margin: 10px 5px;
+    margin: 1rem 5rem;
 }
 .nome-usuario {
     color: var(--cor-secundaria);
@@ -130,4 +131,94 @@
     font-size: 16px;
     font-weight: 400;
 }
-  
+
+.container-menu-direito {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    gap: 16px;
+
+}
+
+.menu-direito-titulo {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 200;  
+    font-size: 12px;
+    margin: 0 0 0% 0;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.3rem;
+}
+
+.nome-projeto {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    background: var(--cor-primaria);
+    border-radius: 8px;
+    padding: 10px 20px;
+    
+}
+  .nome-projeto input {
+    background: transparent;  
+    flex: 1;
+    border: 0;
+    outline: none;
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+}
+
+.nome-projeto ::placeholder {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 100;
+    font-size: 16px;
+}
+.descricao-projeto {
+    display: flex;
+    width: 200px;
+    height: 60px;
+    background: var(--cor-primaria);
+    border-radius: 8px;
+    padding: 10px 20px;
+    
+}
+  .descricao-projeto input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+}
+
+.descricao-projeto ::placeholder {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.personalizacao-titulo {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 200;  
+    font-size: 12px;
+    margin: 0 0 0% 0;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.3rem;
+}
+
+.personalizacao-select {
+    padding: 12px 12px;
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: 0;
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+    font-size: 16px;
+}
